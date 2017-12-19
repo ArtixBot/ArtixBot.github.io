@@ -1,51 +1,81 @@
 <!DOCTYPE html>
-
 <html>
-	<body>
-	<figure>
-		<img src="assets/img_resume.png" alt="Resume" style="position:fixed;right:0;width:64px;height:64px;">
-		<figcaption>Resume</figcaption>
-	</figure>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
-				<p>I'm hosted with GitHub Pages.
-		</p>
+	<head>
+		<style>
+			@font-face{
+				font-family: Clear Sans;
+				src: url(css/fonts/ClearSans-Thin.ttf);
+			}
+		
+			p{
+				font-size:100%;
+			}
+			body {
+				font-size:100%;
+				font-family:Clear Sans, Charcoal, sans-serif;
+				margin: 0;
+			}
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				right:0;
+				top:25%;
+				padding: 0;
+				width: 5%;
+				background-color: transparent;
+				position: fixed;
+				overflow: auto;
+			}
+
+			li a {
+
+				display: block;
+				color: #000;
+				padding: 18px 18px;
+				text-decoration: none;
+			}
+
+			li a.active {
+				background:rgba(1,1,1,0.40);
+				color: white;
+			}
+
+			li a:hover:not(.active) {
+				<!-- For browser compatability all four transitions are included.-->
+				-webkit-transition: background-color 0.25s ease-out;
+				-moz-transition: background-color 0.25s ease-out;
+				-o-transition: background-color 0.25s ease-out;
+				transition: background-color 0.25s ease-out;
+				
+				background:rgba(1,1,1,0.40);
+				
+				
+				color: white;
+			}
+		</style>
+	</head>
+	<body style = "color:white;background-color: #00191a">
+
+		<ul style="text-align:center">
+		  <p>Navbar</p>
+		  <li><a class="active" href="#home"><img src="images/img_home.png" alt="Home" style="width:32px;height:32px;filter:brightness(200%)"></a></li>
+		  <li><a href="#news"><img src="images/img_me.png" alt="test" style="width:32px;height:32px;filter:brightness(200%)"></a></li>
+		  <li><a href="#contact"><img src="images/img_projects.png" alt="Projects" style="width:32px;height:32px;filter:brightness(200%)"></a></li>
+		  <li><a href="#resume"><img src="images/img_resume.png" alt="Resume" style="width:32px;height:32px;filter:brightness(200%)"></a></li>
+		</ul>
+
+		<div style="text-align:center;margin-right:5%;padding:16px 16px">
+		  <h2>Lorem Ipsum</h2>
+		  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+		  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+		  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		</div>
+		
+		<div>
+		</div>
 	</body>
 </html>
