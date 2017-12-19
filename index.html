@@ -6,23 +6,29 @@
 				font-family: Clear Sans;
 				src: url(css/fonts/ClearSans-Thin.ttf);
 			}
-		
+			
 			p{
 				font-size:100%;
 			}
+			
+			h1{
+				font-size:500%;
+			}
+			
 			body {
 				font-size:100%;
 				font-family:Clear Sans, Charcoal, sans-serif;
 				margin: 0;
 			}
-
+			
 			ul {
+				position:absolute;
 				list-style-type: none;
 				margin: 0;
 				right:0;
 				top:25%;
 				padding: 0;
-				width: 5%;
+				width: 75px;
 				background-color: transparent;
 				position: fixed;
 				overflow: auto;
@@ -48,31 +54,75 @@
 				-o-transition: background-color 0.25s ease-out;
 				transition: background-color 0.25s ease-out;
 				
+				
 				background:rgba(1,1,1,0.40);
 				
 				
 				color: white;
 			}
+			
+			@keyframes fadeInUp {
+			  from {
+				opacity: 0;
+				transform: translate3d(0, 5%, 0);
+			  }
+
+			  to {
+				opacity: 1;
+				transform: none;
+			  }
+			}
+			
+			.fadeInUp {
+				animation: 1s fadeInUp;
+			}
+			
+			.tooltip {
+				position: relative;
+				display: inline-block;
+			}
+
+			.tooltip .tooltiptext {
+				visibility: hidden;
+				width: 20px;
+				color: #fff;
+				text-align:left;
+				border-radius: 0px;
+				padding: 0px 0px;
+				
+				opacity: 0;
+				transition: opacity 1s;
+			}
+
+			.tooltip:hover .tooltiptext {
+				visibility: visible;
+				opacity: 1;
+			}
+			
 		</style>
 	</head>
 	<body style = "color:white;background-color: #00191a">
-
-		<ul style="text-align:center">
-		  <p>Navbar</p>
-		  <li><a class="active" href="#home"><img src="images/img_home.png" alt="Home" style="width:32px;height:32px;filter:brightness(200%)"></a></li>
-		  <li><a href="#news"><img src="images/img_me.png" alt="test" style="width:32px;height:32px;filter:brightness(200%)"></a></li>
-		  <li><a href="#contact"><img src="images/img_projects.png" alt="Projects" style="width:32px;height:32px;filter:brightness(200%)"></a></li>
-		  <li><a href="#resume"><img src="images/img_resume.png" alt="Resume" style="width:32px;height:32px;filter:brightness(200%)"></a></li>
-		</ul>
-
-		<div style="text-align:center;margin-right:5%;padding:16px 16px">
-		  <h2>Lorem Ipsum</h2>
-		  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-		  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-		  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
-		  <p>Some text..</p>
-		  <p>Some text..</p>
-		  <p>Some text..</p>
+	
+		<div>
+			<ul style="text-align:center">
+				<li>
+					<div class="tooltip"><a class="active" href="#home"><img src="images/img_home.png" alt="Home" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Home</span></div>
+				</li>
+				<li>
+					<div class="tooltip"><a href="#news"><img src="images/img_me.png" alt="test" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">About Me</span></div>
+				</li>
+				<li>
+					<div class="tooltip"><a href="#contact"><img src="images/img_projects.png" alt="Projects" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Projects</span></div>
+				</li>
+				<li>
+					<div class="tooltip"><a href="#resume"><img src="images/img_resume.png" alt="Resume" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Resume</span></div>
+				</li>
+			</ul>
+		</div>
+		
+		<div class = "fadeInUp" style="margin-right:5%;padding:10% 16px">
+		  <h1>William Wong</h1>
+		  <h3>Designer, Programmer, Creator</h3>
 		</div>
 		
 		<div>
