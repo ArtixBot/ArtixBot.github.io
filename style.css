@@ -19,7 +19,7 @@ body {
 	margin: 0;
 }
 
-ul {
+ol {
 	position:absolute;
 	list-style-type: none;
 	margin: 0;
@@ -65,6 +65,20 @@ footer{
     bottom: 0px; 
     width: 100%;
 	text-align: right;
+}
+
+.aboutme {
+  display: inline-block;
+  border-radius: 1px;
+  background-color: transparent;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 24px;
+  padding: 5px 5px;
+  width: 200px;
 }
 
 @keyframes fadeInUp {
@@ -114,12 +128,12 @@ footer{
 }
 
 .fa:hover{
-	-webkit-transition: font-size 0.25s, opacity 0.25s ease-out;
-	-moz-transition: font-size 0.25s, opacity 0.25s ease-out;
-	-o-transition: font-size 0.25s, opacity 0.25s ease-out;
-	transition: font-size 0.25s, opacity 0.25s ease-out;
+	-webkit-transition: transform 0.25s, opacity 0.25s ease-out;
+	-moz-transition: transform 0.25s, opacity 0.25s ease-out;
+	-o-transition: transform 0.25s, opacity 0.25s ease-out;
+	transition: transform 0.25s, opacity 0.25s ease-out;
 	
-	font-size: 200%;
+	transform: translate(0px, -7px);
 	opacity:1;
 }
 
@@ -129,4 +143,39 @@ footer{
 
 .left{
     float:left;
+}
+
+a:link {
+	color: #6A5ACD;
+    background-color: transparent;
+    text-decoration: none; 
+	opacity: 0.5;
+	outline: 0;
+}
+
+a:visited {
+	color: #6A5ACD;
+    background-color: transparent;
+    text-decoration: none;
+	outline: 0;
+}
+
+a:hover {
+	-webkit-transition: opacity 0.25s ease-out;
+	-moz-transition: opacity 0.25s ease-out;
+	-o-transition: opacity 0.25s ease-out;
+	transition: opacity 0.25s ease-out;
+	
+	color: #6A5ACD;
+    background-color: transparent;
+    text-decoration: none;
+	opacity: 1;
+	outline: 0;
+}
+
+a:active{
+	color: #6A5ACD;
+    background-color: transparent;
+    text-decoration: none;
+	outline: 0;
 }
