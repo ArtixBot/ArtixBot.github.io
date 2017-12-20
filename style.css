@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 @font-face{
 	font-family: Clear Sans;
 	src: url(css/fonts/ClearSans-Thin.ttf);
@@ -57,6 +59,14 @@ li a:hover:not(.active) {
 	color: white;
 }
 
+footer{
+    position: fixed;
+	right: 0px;
+    bottom: 0px; 
+    width: 100%;
+	text-align: right;
+}
+
 @keyframes fadeInUp {
   from {
 	opacity: 0;
@@ -90,4 +100,33 @@ li a:hover:not(.active) {
 .tooltip:hover .tooltiptext {
 	visibility: visible;
 	opacity: 1;
+}
+
+.fa {
+	padding: 15px;
+	font-size: 15px;
+	width: 15px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0px 0px;
+	opacity:0.5;
+	color: #6A5ACD;
+}
+
+.fa:hover{
+	-webkit-transition: font-size 0.25s, opacity 0.25s ease-out;
+	-moz-transition: font-size 0.25s, opacity 0.25s ease-out;
+	-o-transition: font-size 0.25s, opacity 0.25s ease-out;
+	transition: font-size 0.25s, opacity 0.25s ease-out;
+	
+	font-size: 200%;
+	opacity:1;
+}
+
+.right{
+    float:right;
+}
+
+.left{
+    float:left;
 }
