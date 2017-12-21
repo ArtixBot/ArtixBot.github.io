@@ -1,10 +1,13 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url(https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js);
 
+/* Font used: Clear Sans. */
 @font-face{
 	font-family: Clear Sans;
 	src: url(css/fonts/ClearSans-Thin.ttf);
 }
 
+/* General tag changes. */
 p{
 	font-size:100%;
 }
@@ -25,11 +28,9 @@ ol {
 	margin: 0;
 	right:0;
 	top:25%;
-	padding: 0;
 	width: 75px;
 	background-color: transparent;
 	position: fixed;
-	overflow: auto;
 }
 
 li a {
@@ -48,12 +49,12 @@ li a.active {
 
 li a:hover:not(.active) {
 	<!-- For browser compatability all four transitions are included.-->
-	-webkit-transition: opacity 0.25s, background-color 0.25s ease-out;
-	-moz-transition: opacity 0.25s, background-color 0.25s ease-out;
-	-o-transition: opacity 0.25s, background-color 0.25s ease-out;
-	transition: opacity 0.25s, background-color 0.25s ease-out;
+	-webkit-transition: transform 0.25s, opacity 0.25s, background-color 0.25s ease-out;
+	-moz-transition: transform 0.25s, opacity 0.25s, background-color 0.25s ease-out;
+	-o-transition: transform 0.25s, opacity 0.25s, background-color 0.25s ease-out;
+	transition: transform 0.25s, opacity 0.25s, background-color 0.25s ease-out;
 	
-	
+	transform: translate(0px, -5px);
 	background:rgba(1,1,1,0.40);	
 	opacity: 1;
 	color: white;
@@ -67,20 +68,8 @@ footer{
 	text-align: right;
 }
 
-.aboutme {
-  display: inline-block;
-  border-radius: 1px;
-  background-color: transparent;
-  border-top: 1px;
-  border-left: 1px;
-  border-right: 1px;
-  color: #FFFFFF;
-  text-align: left;
-  font-size: 24px;
-  padding: 5px 5px;
-  width: 200px;
-}
-
+/* Animations and custom classes. */
+/* Fade in animation - used by body of all pages. */
 @keyframes fadeInUp {
   from {
 	opacity: 0;
@@ -97,6 +86,7 @@ footer{
 	animation: 1s fadeInUp;
 }
 
+/* Tooltips. Used for right navbar. */
 .tooltip {
 	position: relative;
 	display: inline-block;
@@ -116,6 +106,7 @@ footer{
 	opacity: 1;
 }
 
+/* Font Awesome icons and stuff adjusting them. */
 .fa {
 	padding: 15px;
 	font-size: 15px;
@@ -137,6 +128,7 @@ footer{
 	opacity:1;
 }
 
+/* Custom classes used for resume. */
 .right{
     float:right;
 }
@@ -145,11 +137,12 @@ footer{
     float:left;
 }
 
+/* Link adjustments. */
 a:link {
 	color: #6A5ACD;
     background-color: transparent;
     text-decoration: none; 
-	opacity: 0.5;
+	opacity: 0.75;
 	outline: 0;
 }
 
@@ -157,6 +150,7 @@ a:visited {
 	color: #6A5ACD;
     background-color: transparent;
     text-decoration: none;
+	opacity: 0.75;
 	outline: 0;
 }
 
@@ -178,4 +172,36 @@ a:active{
     background-color: transparent;
     text-decoration: none;
 	outline: 0;
+}
+
+/* Basic button adjustment */
+button {
+  display: inline-block;
+  border-radius: 1px;
+  background-color: transparent;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 24px;
+  padding: 5px 5px;
+  width: 200px;
+}
+
+input[type="button"]{
+	outline:none;
+}
+input[type="button"]::-moz-focus-inner {
+   border: 0;
+}
+
+/* Custom class for portfolio section. */
+
+.portfolio {
+	background-color: transparent;
+	padding: 0px 0px;
+	border-radius: 0px;
+	border: 0;
+	outline:none;
 }

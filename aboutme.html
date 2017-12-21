@@ -2,16 +2,7 @@
 <html>
 	<head>
 		<link rel ="stylesheet" href="style.css">
-		<script>
-		function myFunction(content){
-			var x = document.getElementById(content);
-			if (x.style.display === "none") {
-				x.style.display = "block";
-			} else {
-				x.style.display = "none";
-			}
-		}
-		</script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body style = "color:white;background-color: #00191a">
 	
@@ -24,7 +15,7 @@
 					<div class="tooltip"><a class="active" href="aboutme.html"><img src="images/img_me.png" alt="test" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">About Me</span></div>
 				</li>
 				<li>
-					<div class="tooltip"><a href="#contact"><img src="images/img_projects.png" alt="Projects" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Portfolio</span></div>
+					<div class="tooltip"><a href="projects.html"><img src="images/img_projects.png" alt="Projects" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Portfolio</span></div>
 				</li>
 				<li>
 					<div class="tooltip"><a href="resume.html"><img src="images/img_resume.png" alt="Resume/CV" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Resume</span></div>
@@ -44,28 +35,41 @@
 				<p>Because I write for the Cavalier Daily, I am contractually obliged to abhor the Oxford comma. If you find it anywhere in this website (excepting my resume)
 				please let me know.</p>
 				
-				<p><button class="aboutme" onclick="myFunction('hide1')">Hobbies</button></p>
-				<p id="hide1" style="display:none">I make games, game mods, (really bad) pixel art and (also bad) animations. Despite my utter lack of athletic ability,
-				I also enjoy swimming. I also watch really campy anime series (currently Symphogear).</p>
+				<p><button id = "button1">Hobbies</button></p>
+				<p id="hide1" style="display:none">I play video games and also make them. Additionally, I create pixel art and animations of questionable quality.
+				In terms of athletic hobbies, I enjoy swimming despite my utter lack of skill in the sport. I also watch really campy anime series (currently Symphogear).</p>
 				
-				<p><button class="aboutme" onclick="myFunction('hide2')">Future Plans</button></p>
+				<p><button id = "button2">Future Plans</button></p>
 				<p id="hide2" style="display:none">In the immediate future, I hope to secure an internship in the tech industry. As to the distant future, I'm not entirely sure,
 				but I'm considering a career in cybersecurity or game development.</p>
 				
-				<p><button class="aboutme" onclick="myFunction('hide3')">Contact Me</button></p>
+				<p><button id = "button3">Contact Me</button></p>
 				<p id="hide3" style="display:none">E-mail: williamwongcastle@gmail.com.
-				Alternatively, use one of the social media links in the bottom-right corner.</p>
+				Alternatively, use one of the social media links (yes, I know Steam is not a social media network) in the bottom-right corner.</p>
 				
 			</div>
 		</div>
-		
 		
 		<footer>
 			<a href="https://www.facebook.com/william.wong.37853" class="fa fa-facebook"></a>
 			<a href="https://twitter.com/Wong1William" class="fa fa-twitter"></a>
 			<a href="https://github.com/ArtixBot" class="fa fa-github"></a>
 			<a href="https://www.linkedin.com/in/williamwong718/" class="fa fa-linkedin"></a>
+			<a href="https://steamcommunity.com/id/ArtixBot" class="fa fa-steam"></a>
 		</footer>
+		
+		<!-- There are more efficient ways of doing this, I'm sure, but it's only three buttons. -->
+		<script>
+		$( "#button1" ).click(function() {
+			$( hide1 ).slideToggle(100);
+		});
+		$( "#button2" ).click(function() {
+			$( hide2 ).slideToggle(100);
+		});
+		$( "#button3" ).click(function() {
+			$( hide3 ).slideToggle(100);
+		});
+		</script>
 		
 	</body>
 </html>
