@@ -55,7 +55,7 @@ li a:hover:not(.active) {
 	transition: transform 0.25s, opacity 0.25s, background-color 0.25s ease-out;
 	
 	transform: translate(0px, -5px);
-	background:rgba(1,1,1,0.40);	
+	background:rgba(1,1,1,0.40);
 	opacity: 1;
 	color: white;
 }
@@ -114,18 +114,38 @@ footer{
 	text-align: center;
 	text-decoration: none;
 	margin: 0px 0px;
-	opacity:0.5;
+	opacity:0.25;
 	color: #6A5ACD;
 }
 
 .fa:hover{
-	-webkit-transition: transform 0.25s, opacity 0.25s ease-out;
-	-moz-transition: transform 0.25s, opacity 0.25s ease-out;
-	-o-transition: transform 0.25s, opacity 0.25s ease-out;
-	transition: transform 0.25s, opacity 0.25s ease-out;
+	-webkit-transition: color 0.15s, transform 0.25s, opacity 0.25s ease-out;
+	-moz-transition: color 0.15s, transform 0.25s, opacity 0.25s ease-out;
+	-o-transition: color 0.15s, transform 0.25s, opacity 0.25s ease-out;
+	transition: color 0.15s, transform 0.25s, opacity 0.25s ease-out;
 	
 	transform: translate(0px, -7px);
 	opacity:1;
+}
+
+.fa-facebook:hover	{
+	color: #3B5998;
+}
+
+.fa-twitter:hover	{
+	color: #00aced;
+}
+
+.fa-github:hover	{
+	color: #6cc644;
+}
+
+.fa-linkedin:hover	{
+	color: #007bb6;
+}
+
+.fa-steam:hover	{
+	color: #000000;
 }
 
 /* Custom classes used for resume. */
@@ -182,11 +202,12 @@ button {
   border-top: 1px;
   border-left: 1px;
   border-right: 1px;
+  letter-spacing: 3px;
   color: #FFFFFF;
   text-align: left;
   font-size: 24px;
   padding: 5px 5px;
-  width: 200px;
+  width: 250px;
 }
 
 input[type="button"]{
@@ -201,7 +222,19 @@ input[type="button"]::-moz-focus-inner {
 .portfolio {
 	background-color: transparent;
 	padding: 0px 0px;
+	max-width: 225px;
+	max-height: 180px;
+	margin:0px;
 	border-radius: 0px;
 	border: 0;
 	outline:none;
+	opacity:0.75;
+}
+
+.portfolio:hover {
+	-webkit-transition: opacity 0.25s ease-out;
+	-moz-transition: opacity 0.25s ease-out;
+	-o-transition: opacity 0.25s ease-out;
+	transition: opacity 0.25s ease-out;
+	opacity:1;
 }

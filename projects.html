@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel ="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body style = "color:white;background-color: #00191a">
 	
@@ -23,12 +24,192 @@
 		</div>
 		
 		<div class = "fadeInUp" style="margin-right:5%;padding: 0px 16px">
+		
 			<h1 style="line-height:50%">Projects</h1>
+			<p>Click on an image to get more details.</p>
+
+			<span class="item" style="width:95%">
+				<button class="portfolio" id= "test1" targetDiv= "#content1">
+					<img src="images/img_project_tome4.png" alt="Tales of Maj'Eyal: Minstrel Mod" style="width:220px;height:120px">
+				</button>
+				<button class="portfolio" id= "test2" targetDiv= "#content2">
+					<img src="images/img_project_constable.png" alt="Darkest Dungeon: Constable" style="width:220px;height:120px">
+				</button>
+				<button class="portfolio" id= "test3" targetDiv= "#content3">
+					<img src="images/img_project_reddittopdf.png" alt="Reddit to PDF" style="width:220px;height:120px">
+				</button>
+				<button class="portfolio" id= "test4" targetDiv= "#content4">
+					<img src="images/img_project_duskpatrol.png" alt="Dusk Patrol" style="width:220px;height:120px">
+				</button>
+				<button class="portfolio" id= "test5" targetDiv= "#content5">
+					<img src="images/img_project_ludumdei.png" alt="Ludum Dei" style="width:220px;height:120px">
+				</button>
+			</span>
 			
-			<button class="portfolio" onclick=""><img src="images/img_project_tome4.png" style="width:240px; height:120px"></button>
+			<div class="text" style="width:90%;padding:0.01px 8px;background:rgba(1,1,1,0.40)">
+			
+				<div id= "content1" style="display:none">
+					<p style="font-size:200%">Tales of Maj'Eyal: Minstrel Addon</p>
+					<p><i>Personal role: Creator</i></p>
+					<p>Available on <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1117961301">Steam</a>.
+					Source code is available on <a href="https://github.com/ArtixBot/tome4-minstrel">Github</a>.</p>
+					<p>Adds the Minstrel, a lightly armored duelist who uses the power of song to bolster strength and incapacitate foes.
+					Implements 20 new abilities split across 5 ability trees and a new artifact set.</p>
+					<p>This addon implements the following:</p>
+					<ul>
+						<li>20 new abilities across 5 different trees: Musical Combat, Battle Ballads, Wit, Card Invocation, and Performance Arts.</li>
+							<ul>
+								<li>Musical Combat (DEX): Combat dual-wielding techniques with a focus on global speed manipulation.</li>
+								<li>Battle Ballads (WIL): A twist on Chants; gain three sustainable but incompatible ballads, and skills which gain new effects based on your currently active Ballad.</li>
+								<li>Wit (CUN): A combo-oriented tree. Abilities exploit a new debuff (Mental Instability) to gain additional effects.</li>
+								<li>Card Invocation (CUN): Place your faith in eighteen different cards split into three decks: Benevolence, Malevolence, and Oddities. 
+								If you're lucky, you may draw Aces, which trigger incredibly (over)powered effects.</li>
+								<li>Performance Arts (CUN): Provides a mix of offensive, defensive, and utility abilities to enhance combat prowess.</li>
+							</ul>
+						<li>A new artifact set, consisting of 2 artifacts.</li>
+							<ul>
+								<li>Victario's Trick Lute: High-damage dagger that dazes on crit and boosts mastery of new ability trees.</li>
+								<li>Victario's Tasting Chalice: Provides bonus blight and nature damage, and damages attacking enemies.</li>
+							</ul>
+						<li>Multiple Darkest Dungeon and Jojo references.</li>
+					</ul>
+					<p>This project was built from May-August 2017.</p>
+					<h2>Credits</h2>
+					<ul>
+						<li>All new ability and effect icons were created using www.game-icons.net.</li>
+						<li>ToME4's IRC channel for immeasurable amounts of help in debugging.</li>
+						<li>Andrew Plumb for lute image (used in Victario's Trick Lute).</li>
+						<li>Nicolas "DarkGod" Casalini for creating the game!</li>
+					</ul>
+				</div>
+				
+				<div id= "content2" style= "display:none">
+					<p style="font-size:200%">Darkest Dungeon: The Constable</p>
+					<p><i>Personal role: Creator</i></p>
+					<p>Available on <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1221938546">Steam</a>.</p>
+					<p>Introduces the Constable class mod to Darkest Dungeon, which explores the past of the Houndmaster as per his comic released by Red Hook Studios.
+					The Constable shines brightest in a marking party, with numerous mark-exploiting skills that allow him to reach his full potential against proper targets.
+					Additionally, the Constable possesses numerous stealth-canceling abilities and can enter stealth himself, ensuring that no foe can hide from his sight (and not vice versa).</p>
+					<p>In addition, this mod adds 200 new lines of dialogue related to the Constable.</p>
+					<p>This project was built and released in December of 2017.</p>
+					<h2>Credits</h2>
+					<p>All art and sound assets are taken from Darkest Dungeon, albeit slightly modified for better thematic sense.</p>
+				</div>
+				
+				<div id= "content3" style= "display:none">
+					<p style="font-size:200%">Reddit Short Story to PDF</p>
+					<p><i>Personal role: Front-End Developer</i></p>
+					<p>Available on <a href="https://devpost.com/software/reddit-short-story-to-pdf">Devpost</a>.</p>
+					<p><b>Best Overall: Annual MLH Local Hack Day, University of Virginia</b></p>
+					<p>Built in 12 hours for Season 18 of the MLH Local Hack Day event hosted by Github. Our team of four individuals successfully built a working 'transcriber'
+					capable of reading posts from the subreddit /r/writingprompts and saving them as PDFs for future reading. In terms of the front end, we were able to build
+					a functional, responsive website using the Material Design template.</p>
+					<p>I was personally responsible for work on the front end, implementing the site through CSS and HTML manipulation.</p>
+					<p>Made in December of 2017.</p>
+					<h2>Credits</h2>
+					<p>David Bang, Samarth Kishor, Johnny Wong, William Wong</p>
+				</div>
+				
+				<div id= "content4" style= "display:none">
+					<p style="font-size:200%">Dusk Patrol</p>
+					<p><i>Personal role: User Interface Programmer</i></p>
+					<p>Available on <a href="https://github.com/UVASGD/fall-2017-dusk-patrol">Github</a>.</p>
+					<p>A top-down shoot-em-up with time travel mechanics, Dusk Patrol was built in the Fall Semester of 2017.</p>
+					<p>I worked on user interface functionality and responsiveness, including representation of vital stats like health and time resources. Additionally, I created
+					numerous art assets for the game, including the game's logo, the player characters, and all UI sprites.</p>
+					<p>I also created scripts to allow for basic scorekeeping as well as background responsiveness to player input, which teammates later improved on.</p>
+					<p>Made from September-December 2017.</p>
+					<h2>Credits</h2>
+					<p>Director: Jack Herd</p>
+					<p>Programming: Kenny Chen, Erik Haukenes, Jack Herd, Alex Nguyen, William Wong</p>
+					<p>Design: Brandon Bright, Joshua Santos, Erik Haukenes, Jack Herd</p>
+					<p>Art: Taylor Nelson, William Wong</p>
+					<p>Music: Joshua Santos</p>
+				</div>
+				
+				<div id= "content5" style= "display:none">
+					<p style="font-size:200%">Ludum Dei</p>
+					<p><i>Personal role: Artist and Designer</i></p>
+					<p>Available on <a href="https://defaulttidus.itch.io/ludum-dei">itch.io</a>.</p>
+					<p>Ludum Dei is a 72-hour game project made during Ludum Dare 38. The project is essentially a world-simulator, taking inspiration from games such as Reus.
+					As the God of this plane (or should I say sphere!), players sculpt their small world and provide for its denizens.</p>
+					
+					<p>All art assets in the game were created by me, totaling some 60+ combined 3-D models and 2-D art assets.</p>
+					<p>Additionally, as a designer, I collaborated with our team to determine evolution mechanics, including thresholds to enter a new era as well as resource types.</p>
+					<p>Made in May of 2017.</p>
+					<h2>Credits</h2>
+					<p>Programming: Zachary Danz, Jackson Ekis, Jack Herd</p>
+					<p>Design: David Hall, William Wong</p>
+					<p>Writing: David Hall</p>
+					<p>Art: William Wong</p>
+					<p>Music: Zachary Danz</p>
+				</div>
+				
+			</div>
+			<!--End text class -->
+			
+			
+			<!--Second row of projects -->
+			<span class="item2">
+				<button class="portfolio" id= "test6" targetDiv= "#content6">
+					<img src="images/img_project_kin.png" alt="Kin" style="width:220px;height:120px">
+				</button>
+				<button class="portfolio" id= "test7" targetDiv= "#content7">
+					<img src="images/img_project_rainedin.png" alt="Rained In" style="width:220px;height:120px">
+				</button>
+			</span>
+			
+			<div class="text2" style="width:90%;padding:0.01px 8px;background:rgba(1,1,1,0.40)">
+				
+				<div id= "content6" style= "display:none">
+					<p style="font-size:200%">Kin</p>
+					<p><i>Personal role: Senior Artist and Designer</i></p>
+					<p>Available on <a href="https://defaulttidus.itch.io/kin">itch.io</a>.</p>
+					<p>An open-world action-adventure RPG where players explore a fictional New World as an order of European monks, drawing heavy inspiration from games like Titan Souls and Dark Souls.</p>
+					<p>Responsible for designing boss mechanics and attack patterns, player equipment (including runes which enhance player attacks), level-up mechanics as well as the game's timer mechanics 
+					which takes into account player death and training -- upon reaching 0, the player fails due to the revival of the Pantheon. Also created most interface art files, including health bars, button icons, and clock art.</p>
+					<p>Made from September 2016-May 2017.</p>
+					<h2>Credits</h2>
+					<p>See itch.io link.</p>
+				</div>
+				<div id= "content7" style= "display:none">
+					<p style="font-size:200%">Rained In</p>
+					<p><i>Personal role: Artist</i></p>
+					<p>Available on <a href="https://defaulttidus.itch.io/rained-in">itch.io</a>.</p>
+					<p>Produced in 48 hours as a part of the 1st Annual University of Virginia Game Jam, hosted by UVA's Student Game Developers.</p>
+					<p>A fun-loving adventure game filled with object-collection, inventory management, and numerous minigames! Explore the house to collect items significant to Jimbo, his parents,
+					and his big ol' pupper, Winston! Find the places where items belong to unlock entertaining minigames like Asteroids, Brick-Breaker, Duck Hunt, Hack n' Slash, The Ground Is Lava,
+					Rubber Racer, Winston Goes Clubbing, Rained-In Tower Defense, Riddler, Tick-Tack-Toe, and the Amazing Maze!</p>
+					<p>As an artist for Rained In, I developed art assets for numerous minigames, including Brick-Breaker and Duck Hunter.</p>
+					<p>Made from September 2016-May 2017.</p>
+					<h2>Credits</h2>
+					<p>See itch.io link.</p>
+				</div>
+				
+				
+			</div>
 			
 		</div>
 		
+		<script>
+
+		$('.item button').click(function(e){
+				
+    	var content =$($(this).attr('targetDiv'));
+			$(".text div").not(content).hide();
+			$(content).slideToggle(600);
+				
+		});
+		
+		// Allows for multiple rows to be represented at once.
+		$('.item2 button').click(function(e){
+				
+    	var content =$($(this).attr('targetDiv'));
+			$(".text2 div").not(content).hide();
+			$(content).slideToggle(600);
+				
+		});
+		</script>
 		
 		<footer>
 			<a href="https://www.facebook.com/william.wong.37853" class="fa fa-facebook"></a>
@@ -37,6 +218,5 @@
 			<a href="https://www.linkedin.com/in/williamwong718/" class="fa fa-linkedin"></a>
 			<a href="https://steamcommunity.com/id/ArtixBot" class="fa fa-steam"></a>
 		</footer>
-		
 	</body>
 </html>
