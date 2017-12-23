@@ -248,23 +248,23 @@ footer{
 
 .tooltip.two {
 	opacity: 0;
+	-webkit-animation-delay: 0.75s;
+	-moz-animation-delay: 0.75s;
+	animation-delay: 0.75s;
+}
+
+.tooltip.three {
+	opacity: 0;
 	-webkit-animation-delay: 1s;
 	-moz-animation-delay: 1s;
 	animation-delay: 1s;
 }
 
-.tooltip.three {
-	opacity: 0;
-	-webkit-animation-delay: 1.5s;
-	-moz-animation-delay: 1.5s;
-	animation-delay: 1.5s;
-}
-
 .tooltip.four {
 	opacity: 0;
-	-webkit-animation-delay: 2s;
-	-moz-animation-delay: 2s;
-	animation-delay: 2s;
+	-webkit-animation-delay: 1.25s;
+	-moz-animation-delay: 1.25s;
+	animation-delay: 1.25s;
 }
 
 .tooltip .tooltiptext {
@@ -289,18 +289,16 @@ footer{
 	text-align: center;
 	text-decoration: none;
 	margin: 0px 0px;
-	opacity:0.25;
 	color: #6A5ACD;
 }
 
 .fa:hover{
-	-webkit-transition: color 0.15s, transform 0.25s, opacity 0.25s ease-out;
-	-moz-transition: color 0.15s, transform 0.25s, opacity 0.25s ease-out;
-	-o-transition: color 0.15s, transform 0.25s, opacity 0.25s ease-out;
-	transition: color 0.15s, transform 0.25s, opacity 0.25s ease-out;
+	-webkit-transition: color 0.05s, transform 0.25s ease-out;
+	-moz-transition: color 0.05s, transform 0.25s ease-out;
+	-o-transition: color 0.05s, transform 0.25s ease-out;
+	transition: color 0.05s, transform 0.25s ease-out;
 	
 	transform: translate(0px, -7px);
-	opacity:1;
 }
 
 .fa-facebook:hover	{
@@ -324,14 +322,23 @@ footer{
 }
 
 .fa-download {
-	
-	width:50px;
-	font-size:50px;
+	width:75px;
+	font-size:75px;
 }
 
 .fa-download:hover {
 	color: #C0C0C0;
 	animation: 0.75s downloadWidget;
+}
+
+.fa-arrow-down {
+	color: #ffffff;
+	padding: 10px 5px;
+}
+
+.fa-arrow-down:hover {
+	color: #ffffff;
+	padding: 10px 5px;
 }
 
 @keyframes downloadWidget {
@@ -356,63 +363,40 @@ footer{
 }
 
 /* Link adjustments. */
-a:link {
-	color: #6A5ACD;
-    background-color: transparent;
-    text-decoration: none; 
-	opacity: 0.75;
-	outline: 0;
+a{
+	color: #c79800;
+	text-decoration: none;
+	outline:0;
 }
 
-a:visited {
-	color: #6A5ACD;
-    background-color: transparent;
-    text-decoration: none;
-	opacity: 0.75;
-	outline: 0;
-}
-
-a:hover {
-	-webkit-transition: opacity 0.25s ease-out;
-	-moz-transition: opacity 0.25s ease-out;
-	-o-transition: opacity 0.25s ease-out;
-	transition: opacity 0.25s ease-out;
+a:hover{
+	-webkit-transition: color 0.25s ease-out;
+	-moz-transition: color 0.25s ease-out;
+	-o-transition: color 0.25s ease-out;
+	transition: color 0.25s ease-out;
 	
-	color: #6A5ACD;
-    background-color: transparent;
-    text-decoration: none;
-	opacity: 1;
-	outline: 0;
-}
-
-a:active{
-	color: #6A5ACD;
-    background-color: transparent;
-    text-decoration: none;
-	outline: 0;
+	color: #ffd92e;
 }
 
 /* Basic button adjustment */
 button {
+
+  font-family:Clear Sans, Charcoal, sans-serif;
   display: inline-block;
-  border-radius: 0.25px;
+  border-radius: 0px;
   background-color: transparent;
   border-top: 1px;
   border-left: 1px;
   border-right: 1px;
-  letter-spacing: 3px;
   color: #FFFFFF;
   text-align: left;
   font-size: 24px;
-  padding: 5px 5px;
+  padding: 0px 0px;
   width: 250px;
 }
 
-input[type="button"]{
-	outline:none;
-}
-input[type="button"]::-moz-focus-inner {
-   border: 0;
+.button:active {
+    width: 10000px;
 }
 
 /* Custom class for portfolio section. */
