@@ -20,6 +20,8 @@ body {
 	font-size:100%;
 	font-family:Clear Sans, Charcoal, sans-serif;
 	margin: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 ol {
@@ -71,25 +73,198 @@ footer{
 /* Animations and custom classes. */
 /* Fade in animation - used by body of all pages. */
 @keyframes fadeInUp {
-  from {
-	opacity: 0;
-	transform: translate3d(0, 5%, 0);
-  }
+	from {
+		opacity: 0;
+		transform: translate3d(0, 5%, 0);
+	}
 
-  to {
-	opacity: 1;
-	transform: none;
-  }
+	to {
+		opacity: 1;
+		transform: none;
+	}
 }
 
 .fadeInUp {
+	-webkit-animation:1s fadeInUp;
+	-moz-animation:1s fadeInUp;
 	animation: 1s fadeInUp;
+}
+
+/* Fade in right - used in homepage. */
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+		transform: translate3d(10%, 0, 0);
+	}
+	
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fadeInRight {
+	-webkit-animation: 0.5s fadeInRight forwards;
+	-moz-animation: 0.5s fadeInRight forwards;
+	animation: 0.5s fadeInRight forwards;
+}
+
+.fadeInRight.one {
+	opacity: 0;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.fadeInRight.two {
+	opacity: 0;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+
+.fadeInRight.three {
+	opacity: 0;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+.fadeInRight.four {
+	opacity: 0;
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;
+	animation-delay: 2.5s;
+}
+
+.fadeInRight.five {
+	opacity: 0;
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	animation-delay: 3s;
+}
+
+/* Fade in right tjen fade up/down. - used in homepage. */
+@keyframes fadeInRightUp {
+	from {
+		opacity: 0;
+		transform: translate3D(50%, 0, 0);
+	}
+	20% {
+		opacity: 1;
+		transform: none;
+	}
+	80% {
+		opacity: 1;
+		transform: none;
+	}
+	100% {
+		opacity: 0;
+		transform: translate3D(0, -100%, 0);
+	}
+}
+
+@keyframes fadeInRightDown {
+	from {
+		opacity: 0;
+		transform: translate3D(50%, 0, 0);
+	}
+	20% {
+		opacity: 1;
+		transform: none;
+	}
+	80% {
+		opacity: 1;
+		transform: none;
+	}
+	100% {
+		opacity: 0;
+		transform: translate3D(0, 100%, 0);
+	}
+}
+
+.fadeInRightUp {
+	-webkit-animation: 5s fadeInRightUp forwards infinite;
+	-moz-animation: 5s fadeInRightUp forwards infinite;
+	animation: 5s fadeInRightUp forwards infinite;
+}
+
+.fadeInRightDown {
+	-webkit-animation: 5s fadeInRightDown forwards infinite;
+	-moz-animation: 5s fadeInRightDown forwards infinite;
+	animation: 5s fadeInRightDown forwards infinite;
+}
+
+.fadeInRightUp.one {
+	opacity: 0;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.fadeInRightDown.two {
+	opacity: 0;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+.fadeInRightUp.three {
+	opacity: 0;
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	animation-delay: 3s;
+}
+
+.fadeInRightDown.four {
+	opacity: 0;
+	-webkit-animation-delay: 4s;
+	-moz-animation-delay: 4s;
+	animation-delay: 4s;
+}
+
+.fadeInRightUp.five {
+	opacity: 0;
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	animation-delay: 5s;
 }
 
 /* Tooltips. Used for right navbar. */
 .tooltip {
 	position: relative;
 	display: inline-block;
+	-webkit-animation: 0.5s fadeInRight forwards;
+	-moz-animation: 0.5s fadeInRight forwards;
+	animation: 0.5s fadeInRight forwards;
+}
+
+.tooltip.one {
+	opacity: 0;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+.tooltip.two {
+	opacity: 0;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.tooltip.three {
+	opacity: 0;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+
+.tooltip.four {
+	opacity: 0;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	animation-delay: 2s;
 }
 
 .tooltip .tooltiptext {
@@ -266,10 +441,17 @@ input[type="button"]::-moz-focus-inner {
 	opacity:1;
 }
 
-.fullSize{
-	
-	height:	400px;
-	width: 600px;
+/* CSS Background Animations */
+#gradient{
+	background: #00191a;
+	background: linear-gradient(#006266, #00191a);
+	background-size: 100% 125%;
+	color:white;
 }
 
-/* CSS Background Aniamtions */
+#gradient-tall{
+	background: #00191a;
+	background: linear-gradient(#006266, #00191a);
+	background-size: 100% 175%;
+	color:white;
+}
