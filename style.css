@@ -148,6 +148,29 @@ footer{
 	color: #000000;
 }
 
+.fa-download {
+	
+	width:50px;
+	font-size:50px;
+}
+
+.fa-download:hover {
+	color: #C0C0C0;
+	animation: 0.75s downloadWidget;
+}
+
+@keyframes downloadWidget {
+	25% {
+		transform: translate3D(0, 5px, 0);
+	}
+	50% {
+		transform: translate3D(0, -2px, 0);
+	}
+	75% {
+		transform: translate3D(0, 5px, 0);
+	}
+}
+
 /* Custom classes used for resume. */
 .right{
     float:right;
@@ -197,7 +220,7 @@ a:active{
 /* Basic button adjustment */
 button {
   display: inline-block;
-  border-radius: 1px;
+  border-radius: 0.25px;
   background-color: transparent;
   border-top: 1px;
   border-left: 1px;
@@ -228,7 +251,7 @@ input[type="button"]::-moz-focus-inner {
 	border-radius: 0px;
 	border: 0;
 	outline:none;
-	opacity:0.75;
+	opacity:0.4;
 }
 
 .portfolio:hover {
@@ -236,5 +259,17 @@ input[type="button"]::-moz-focus-inner {
 	-moz-transition: opacity 0.25s ease-out;
 	-o-transition: opacity 0.25s ease-out;
 	transition: opacity 0.25s ease-out;
+	opacity:0.65;
+}
+
+.portfolio:active {
 	opacity:1;
 }
+
+.fullSize{
+	
+	height:	400px;
+	width: 600px;
+}
+
+/* CSS Background Aniamtions */

@@ -49,7 +49,10 @@
 			<div class="text" style="width:90%;padding:0.01px 8px;background:rgba(1,1,1,0.40)">
 			
 				<div id= "content1" style="display:none">
-					<p style="font-size:200%">Tales of Maj'Eyal: Minstrel Addon</p>
+					<p style="font-size:200%">
+						Tales of Maj'Eyal: Minstrel Addon
+						<img src="images/img_project_tome4_1.png" alt="ToME 1" style="float:right;width:260px;height:140px;margin-right:2%">
+					</p>
 					<p><i>Personal role: Creator</i></p>
 					<p>Available on <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1117961301">Steam</a>.
 					Source code is available on <a href="https://github.com/ArtixBot/tome4-minstrel">Github</a>.</p>
@@ -84,7 +87,10 @@
 				</div>
 				
 				<div id= "content2" style= "display:none">
-					<p style="font-size:200%">Darkest Dungeon: The Constable</p>
+					<p style="font-size:200%">
+						Darkest Dungeon: The Constable
+						<img src="images/img_project_constable1.png" alt="Constable 1" style="float:right;width:260px;height:140px;margin-right:2%">
+					</p>
 					<p><i>Personal role: Creator</i></p>
 					<p>Available on <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1221938546">Steam</a>.</p>
 					<p>Introduces the Constable class mod to Darkest Dungeon, which explores the past of the Houndmaster as per his comic released by Red Hook Studios.
@@ -111,7 +117,10 @@
 				</div>
 				
 				<div id= "content4" style= "display:none">
-					<p style="font-size:200%">Dusk Patrol</p>
+					<p style="font-size:200%">
+						Dusk Patrol
+						<img src="images/img_project_duskpatrol1.png" alt="Dusk Patrol 1" style="float:right;width:260px;height:140px;margin-right:2%">
+					</p>
 					<p><i>Personal role: User Interface Programmer</i></p>
 					<p>Available on <a href="https://github.com/UVASGD/fall-2017-dusk-patrol">Github</a>.</p>
 					<p>A top-down shoot-em-up with time travel mechanics, Dusk Patrol was built in the Fall Semester of 2017.</p>
@@ -128,7 +137,10 @@
 				</div>
 				
 				<div id= "content5" style= "display:none">
-					<p style="font-size:200%">Ludum Dei</p>
+					<p style="font-size:200%">
+					Ludum Dei
+					<img src="images/img_project_ludumdei1.png" alt="Ludum Dei 1" style="float:right;width:260px;height:140px;margin-right:2%">
+					</p>
 					<p><i>Personal role: Artist and Designer</i></p>
 					<p>Available on <a href="https://defaulttidus.itch.io/ludum-dei">itch.io</a>.</p>
 					<p>Ludum Dei is a 72-hour game project made during Ludum Dare 38. The project is essentially a world-simulator, taking inspiration from games such as Reus.
@@ -150,7 +162,7 @@
 			
 			
 			<!--Second row of projects -->
-			<span class="item2">
+			<span class="item">
 				<button class="portfolio" id= "test6" targetDiv= "#content6">
 					<img src="images/img_project_kin.png" alt="Kin" style="width:220px;height:120px">
 				</button>
@@ -159,10 +171,13 @@
 				</button>
 			</span>
 			
-			<div class="text2" style="width:90%;padding:0.01px 8px;background:rgba(1,1,1,0.40)">
+			<div class="text" style="width:90%;padding:0.01px 8px;background:rgba(1,1,1,0.40)">
 				
 				<div id= "content6" style= "display:none">
-					<p style="font-size:200%">Kin</p>
+					<p style="font-size:200%">
+						Kin
+						<img src="images/img_project_kin1.png" alt="Kin 1" style="float:right;width:260px;height:140px;margin-right:2%">
+					</p>
 					<p><i>Personal role: Senior Artist and Designer</i></p>
 					<p>Available on <a href="https://defaulttidus.itch.io/kin">itch.io</a>.</p>
 					<p>An open-world action-adventure RPG where players explore a fictional New World as an order of European monks, drawing heavy inspiration from games like Titan Souls and Dark Souls.</p>
@@ -173,7 +188,10 @@
 					<p>See itch.io link.</p>
 				</div>
 				<div id= "content7" style= "display:none">
-					<p style="font-size:200%">Rained In</p>
+					<p style="font-size:200%">
+						Rained In
+						<img src="images/img_project_rainedin1.png" alt="Rained In 1" style="float:right;width:260px;height:140px;margin-right:2%">
+					</p>
 					<p><i>Personal role: Artist</i></p>
 					<p>Available on <a href="https://defaulttidus.itch.io/rained-in">itch.io</a>.</p>
 					<p>Produced in 48 hours as a part of the 1st Annual University of Virginia Game Jam, hosted by UVA's Student Game Developers.</p>
@@ -192,20 +210,12 @@
 		</div>
 		
 		<script>
-
+		
+		// Only one project should be visible at a time.
 		$('.item button').click(function(e){
 				
     	var content =$($(this).attr('targetDiv'));
 			$(".text div").not(content).hide();
-			$(content).slideToggle(600);
-				
-		});
-		
-		// Allows for multiple rows to be represented at once.
-		$('.item2 button').click(function(e){
-				
-    	var content =$($(this).attr('targetDiv'));
-			$(".text2 div").not(content).hide();
 			$(content).slideToggle(600);
 				
 		});
