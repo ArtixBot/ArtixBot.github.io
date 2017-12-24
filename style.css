@@ -241,30 +241,27 @@ footer{
 
 .tooltip.one {
 	opacity: 0;
+}
+
+.tooltip.two {
+	opacity: 0;
 	-webkit-animation-delay: 0.5s;
 	-moz-animation-delay: 0.5s;
 	animation-delay: 0.5s;
 }
 
-.tooltip.two {
+.tooltip.three {
 	opacity: 0;
 	-webkit-animation-delay: 0.75s;
 	-moz-animation-delay: 0.75s;
 	animation-delay: 0.75s;
 }
 
-.tooltip.three {
+.tooltip.four {
 	opacity: 0;
 	-webkit-animation-delay: 1s;
 	-moz-animation-delay: 1s;
 	animation-delay: 1s;
-}
-
-.tooltip.four {
-	opacity: 0;
-	-webkit-animation-delay: 1.25s;
-	-moz-animation-delay: 1.25s;
-	animation-delay: 1.25s;
 }
 
 .tooltip .tooltiptext {
@@ -395,10 +392,13 @@ button {
   width: 250px;
 }
 
-.button:active {
-    width: 10000px;
+.rotated{
+	
+    transform:rotate(180deg); 
+    -webkit-transform:rotate(180deg); 
+    -moz-transform:rotate(180deg); 
+    -o-transform:rotate(180deg); 
 }
-
 /* Custom class for portfolio section. */
 
 .portfolio {
@@ -414,18 +414,21 @@ button {
 }
 
 .portfolio:hover {
-	-webkit-transition: opacity 0.25s ease-out;
-	-moz-transition: opacity 0.25s ease-out;
-	-o-transition: opacity 0.25s ease-out;
-	transition: opacity 0.25s ease-out;
+	-webkit-transition: transform 0.25s, opacity 0.25s ease-in-out;
+	-moz-transition: transform 0.25s, opacity 0.25s ease-in-out;
+	-o-transition: transform 0.25s, opacity 0.25s ease-in-out;
+	transition: transform 0.25s, opacity 0.25s ease-in-out;
+	transform:scale(1.05);
 	opacity:0.65;
 }
 
 .portfolio:active {
+	transform:scale(1.00);
 	opacity:1;
+	
 }
 
-/* CSS Background Animations */
+/* CSS Backgrounds */
 #gradient{
 	background: #00191a;
 	background: linear-gradient(#006266, #00191a);

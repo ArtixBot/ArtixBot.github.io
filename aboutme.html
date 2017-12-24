@@ -9,16 +9,16 @@
 		<div>
 			<ol style="text-align:center">
 				<li>
-					<div class="tooltip"><a href="index.html"><img src="images/img_home.png" alt="Home" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Home</span></div>
+					<div class="tooltip two"><a href="index.html"><img src="images/img_home.png" alt="Home" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Home</span></div>
 				</li>
 				<li>
-					<div class="tooltip"><a class="active" href="aboutme.html"><img src="images/img_me.png" alt="test" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">About Me</span></div>
+					<div class="tooltip one"><a class="active" href="aboutme.html"><img src="images/img_me.png" alt="test" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">About Me</span></div>
 				</li>
 				<li>
-					<div class="tooltip"><a href="projects.html"><img src="images/img_projects.png" alt="Projects" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Portfolio</span></div>
+					<div class="tooltip three"><a href="projects.html"><img src="images/img_projects.png" alt="Projects" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Portfolio</span></div>
 				</li>
 				<li>
-					<div class="tooltip"><a href="resume.html"><img src="images/img_resume.png" alt="Resume/CV" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Resume</span></div>
+					<div class="tooltip four"><a href="resume.html"><img src="images/img_resume.png" alt="Resume/CV" style="width:32px;height:32px;filter:brightness(200%)"></a><span class="tooltiptext">Resume</span></div>
 				</li>
 			</ol>
 		</div>
@@ -36,38 +36,42 @@
 				<p>Because I write for the Cavalier Daily, I am contractually obliged to abhor the Oxford comma. If you find this redundant piece of punctuation anywhere in this website (excepting my resume)
 				please let me know.</p>
 				
-				<p><button id = "button1">Hobbies<p class="fa fa-arrow-down" style="float:right"></p></button></p>
-				<p id="hide1" style="display:none">I play video games and also make them. Additionally, I create pixel art and animations of questionable quality.
-				In terms of athletic hobbies, I enjoy swimming despite my utter lack of skill in the sport. I also watch campy anime series (currently Symphogear AXZ).</p>
+				<p><button id = "button1">Hobbies<p id = "rotate1" class="fa fa-arrow-down" style="float:right"></p></button></p>
+				<p id="hide1" style="display:none">I play and make video games; create pixel art and animations of questionable quality; and watch campy anime series (currently Symphogear AXZ).
+				In terms of athletic hobbies, I enjoy swimming despite my utter lack of skill in the sport.</p>
 				
-				<p><button id = "button2">Future Plans<p class="fa fa-arrow-down" style="float:right"></p></button></p>
+				<p><button id = "button2">Future Plans<p id = "rotate2" class="fa fa-arrow-down" style="float:right"></p></button></p>
 				<p id="hide2" style="display:none">In the immediate future, I hope to secure an internship in the tech industry. As to the distant future, I'm not entirely sure,
 				but I'm considering a career in cybersecurity or game development.</p>
 				
-				<p><button id = "button3">Contact Me<p class="fa fa-arrow-down" style="float:right"></p></button></p>
+				<p><button id = "button3">Contact Me<p id = "rotate3" class="fa fa-arrow-down" style="float:right"></p></button></p>
 				<p id="hide3" style="display:none">E-mail: williamwongcastle@gmail.com, or one of the links in the bottom-right corner.</p>
 				
 			</div>
 		</div>
 		
 		<footer>
-			<a href="https://www.facebook.com/william.wong.37853" class="fa fa-facebook"></a>
-			<a href="https://twitter.com/Wong1William" class="fa fa-twitter"></a>
-			<a href="https://github.com/ArtixBot" class="fa fa-github"></a>
-			<a href="https://www.linkedin.com/in/williamwong718/" class="fa fa-linkedin"></a>
-			<a href="https://steamcommunity.com/id/ArtixBot" class="fa fa-steam"></a>
+			<a href="https://www.facebook.com/william.wong.37853" rel="noopener noreferrer" target="_blank" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/Wong1William" rel="noopener noreferrer" target="_blank" class="fa fa-twitter"></a>
+			<a href="https://github.com/ArtixBot" rel="noopener noreferrer" target="_blank" class="fa fa-github"></a>
+			<a href="https://www.linkedin.com/in/williamwong718/" rel="noopener noreferrer" target="_blank" class="fa fa-linkedin"></a>
+			<a href="https://steamcommunity.com/id/ArtixBot" rel="noopener noreferrer" target="_blank" class="fa fa-steam"></a>
 		</footer>
 		
 		<!-- There are more efficient ways of doing this, I'm sure, but it's only three buttons. -->
 		<script>
 		$( "#button1" ).click(function() {
 			$( hide1 ).slideToggle(100);
+			$( rotate1 ).toggleClass('rotated');
 		});
 		$( "#button2" ).click(function() {
 			$( hide2 ).slideToggle(100);
+			$( rotate2 ).toggleClass('rotated');
 		});
 		$( "#button3" ).click(function() {
 			$( hide3 ).slideToggle(100);
+			$( rotate3 ).toggleClass('rotated');
+
 		});
 		</script>
 		
