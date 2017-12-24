@@ -324,6 +324,11 @@ footer{
 }
 
 .fa-download:hover {
+	-webkit-transition: color 0.25s ease-out;
+	-moz-transition: color 0.25s ease-out;
+	-o-transition: color 0.25s ease-out;
+	transition: color 0.25s ease-out;
+	
 	color: #C0C0C0;
 	animation: 0.75s downloadWidget;
 }
@@ -393,7 +398,6 @@ button {
 }
 
 .rotated{
-	
     transform:rotate(180deg); 
     -webkit-transform:rotate(180deg); 
     -moz-transform:rotate(180deg); 
@@ -425,6 +429,24 @@ button {
 .portfolio:active {
 	transform:scale(1.00);
 	opacity:1;
+	
+}
+
+.portImage{
+	float:right;
+	width:260px;
+	height:140px;
+	margin-right:2%
+}
+
+.portImage:hover{
+	-webkit-transition: transform 0.25s ease-in-out;
+	-moz-transition: transform 0.25s ease-in-out;
+	-o-transition: transform 0.25s ease-in-out;
+	transition: transform 0.25s ease-in-out;
+	
+	transform-origin: top right;
+	transform:scale3d(3, 3, 1);
 	
 }
 
