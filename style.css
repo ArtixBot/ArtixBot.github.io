@@ -13,6 +13,8 @@ p{
 }
 
 h1{
+	/* Disgusting. Fix later: need to import font so that it is no longer reliant on Google servers for stability's sake.*/
+	font-family: 'Raleway', sans-serif;
 	font-size:500%;
 }
 
